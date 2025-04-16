@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Astronomy Picture of the Day</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/scripts.js" defer></script>
+</head>
+<body>
+<h2>Astronomy Picture of the Day</h2>
+
+<p>
+    Documentation followed:
+    <a href="https://api.nasa.gov/" target="_blank">Official NASA APOD API</a> |
+    <a href="https://www.geeksforgeeks.org/how-to-get-data-from-nasa-federal-agencies-using-the-nasa-public-apis/" target="_blank">GeeksforGeeks Tutorial</a>
+</p>
+
+<!-- Input for selecting date and a button to fetch the picture -->
+<label for="date">Select a date:</label>
+<input type="date" id="date">
+<!-- Added the Check button here -->
+<button onclick="loadData()">Check</button>
+
+<!-- Display area for picture details -->
+<h3 class="img-title" id="title"></h3>
+<em class="date" id="pic_date"></em><br>
+<img src="" alt="NASA APOD" id="apod_pic" class="img-apod">
+<p class="caption" id="caption"></p>
+
+</body>
+</html>
